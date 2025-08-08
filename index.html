@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffe6eb;
+      color: #241a22;
+    }
+    header {
+      background: linear-gradient(to right, #372d36 30%, #503b49 50%, #fdd6dd 100%);;
+      padding: 27px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Raleway', sans-serif ;
+      font-weight: 700;
+      margin: 0;
+      font-size: 35px;
+      color: #fff2f7;
+    }
+    header a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #241a22;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    #container a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #241a22;
+      font-weight: bold;
+      background: linear-gradient(to right, #facede);
+      padding: 10px;
+      border-radius: 15px;
+      border: 1.5px solid white;
+    }
+    #container a:hover {
+      background: linear-gradient(to bottom,#eab8cb, #facede);
+    }
+    .projectslist a {
+      margin: auto;
+      text-decoration: none;
+      color: #241a22;
+      font-weight: bold;
+      background: linear-gradient(to right, #facede);
+      padding: 10px;
+      border-radius: 15px;
+      border: 1.5px solid white;
+    }
+    .projectslist a:hover {
+      background: linear-gradient(to bottom,#eab8cb, #facede);
+    }
+    section {
+      padding: 20px 20px 40px 20px;
+      max-width: 1050px;
+      box-shadow: 0 8px 24px #e5a9bf5e;
+      background-color: #fef4f6;
+      border-radius: 20px;
+      margin: 20px auto 40px auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e5a9bf;
+      color: #241a22;
+    }
+    h2 {
+      font-family: 'Raleway', sans-serif ;
+      font-weight: 700;
+      margin: 0;
+      font-size: 30px;
+    }
+    h3{
+      font-family: "Raleway", sans-serif;
+      font-weight: 600px;
+      font-size: 22px;
+      margin:0px 5px 5px 5px;
+    }
+    p {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 20px;
+      margin:3px 5px;
+    }
+    a {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600px;
+      font-size: 17px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    #container {
+      background: linear-gradient(to bottom, #facede, #fde3e8);
+      padding: 10px 20px 10px 10px;
+      border-radius: 20px;
+      background-size: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sophia Trindade — Portfolio</h1>
+    <nav>
+      <a href="#intro" onclick="scrollToCenter(event, 'intro')">Introdução</a>
+      <a href="#projects" onclick="scrollToCenter(event, 'projects')">Projetos</a>
+      <a href="#certificate" onclick="scrollToCenter(event, 'certificate')">Certificados</a>
+      <a href="#contact" onclick="scrollToCenter(event, 'contact')">Contato</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Sobre mim</h2>
+    <p>
+      Olá! Meu nome é Sophia e tenho uma paixão especial por programação, dinossauros e gatos. 
+      Tenho experiência prática em HTML, CSS, JavaScript, Python, Git, VSCode, React e SEO, o que me permite desenvolver soluções digitais bem estruturadas, 
+      funcionais e otimizadas para a web.<br>
+      Meu interesse por desenvolvimento vai além do código: gosto de entender como a experiência do usuário e a performance se conectam, 
+      e busco constantemente aprender e aplicar boas práticas em cada projeto. 
+      Além disso, sou curiosa por natureza e adoro explorar a interseção entre ciência, design e tecnologia.<br>
+      Atualmente, estou focada em expandir meu portfólio com projetos autorais, 
+      sempre com atenção à qualidade, criatividade e aprendizado contínuo.
+    </p>
+  </section>
+
+  <section id="projects">
+    <div id="container">
+      <h2>Projetos</h2>
+      <nav>
+        <a href="#dinodatabase" onclick="scrollToCenter(event, 'dinodatabase')">Dinodatabase</a>
+        <a href="#landingpage" onclick="scrollToCenter(event, 'landingpage')">Landing page</a>
+        <a href="#react" onclick="scrollToCenter(event, 'react')">Great recipes</a>
+      </nav>
+    </div>
+    <section id="dinodatabase" class="projectslist" style="margin-bottom: 0px;">
+      <h3>DinoDatabase</h3>
+      <p>
+        DinoDatabase é um site informativo e responsivo voltado à divulgação científica sobre dinossauros. 
+        Desenvolvido com HTML, CSS e foco em experiência do usuário, o projeto apresenta páginas individuais 
+        para diferentes espécies, com conteúdo organizado, visual atrativo e URLs amigáveis.<br>
+        Utiliza boas práticas de SEO, design responsivo e estilização moderna com fontes customizadas e 
+        gradientes suaves. O objetivo é tornar o conhecimento sobre paleontologia acessível e 
+        interessante para públicos diversos.
+      </p><br>
+      <a href="https://dinodatabase.onrender.com">Clique aqui para visualizar projeto</a>
+    </section>
+    <section id="landingpage" class="projectslist" style="margin-bottom: 0px;">
+      <h3>Pet Shop Landing page</h3>
+      <p>
+        Este projeto é uma landing page fictícia desenvolvida para um pet shop, 
+        com foco em design responsivo, visual limpo e comunicação clara com o usuário. 
+        A página foi criada com HTML, CSS e JavaScript puro, incorporando elementos modernos, 
+        ícones personalizados, seções bem definidas e navegação fluida.<br>
+        O objetivo do site é apresentar os principais serviços do pet shop, 
+        incentivar o agendamento de visitas e reforçar o carinho e cuidado com os pets. 
+        O layout é totalmente adaptável para dispositivos móveis, com atenção à acessibilidade e usabilidade.
+      </p><br>
+      <a href="https://sopynya.github.io/TemplateLandingpage/">Clique aqui para visualizar projeto</a>
+    </section>
+    <section id="react" class="projectslist" style="margin-bottom: 0px;">
+      <h3>Great Recipes</h3>
+      <p>
+        Este projeto utiliza React e Vite, com foco em uma experiência interativa e intuitiva. 
+        O projeto permite aos usuários explorar e filtrar receitas de diferentes regiões do mundo, 
+        com opções de pesquisa por tipo (vegano, não vegano, bebidas) e sabor (doce, salgado).<br>
+        React Router para navegação dinâmica, este projeto oferece uma interface responsiva e fluida, 
+        com imagens ilustrativas para cada receita. É uma ótima demonstração de como integrar 
+        funcionalidades de pesquisa e filtragem em uma SPA (Single Page Application).
+      </p><br>
+      <a href="https://github.com/sopynya/teste1">Clique aqui para visualizar projeto</a>
+    </section>
+  </section>
+
+  <section id="certificates">
+    <div id="container">
+      <h2>Certificados</h2>
+    </div>
+    <section style="margin-bottom: 0;" class="projectslist">
+      <h3>Responsive Web Design</h3>
+      <p>by freeCodeCamp</p><br>
+      <a href="https://freecodecamp.org/certification/sopynya/responsive-web-design">Clique aqui para visualizar certificado</a>
+    </section>
+  </section>
+
+  <footer id="contact">
+    <p><b>Contato</b>: sophiatrindade734@gmail.com</p>
+  </footer>
+
+  <script>
+    function scrollToCenter(event, sectionId) {
+      event.preventDefault();
+      const target = document.getElementById(sectionId);
+      if (target) {
+        const rect = target.getBoundingClientRect();
+        const offset = window.pageYOffset + rect.top - (window.innerHeight / 2) + (rect.height / 2);
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }
+    }
+</script>
+</body>
+</html>
