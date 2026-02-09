@@ -164,7 +164,7 @@
     <h2>Sobre mim</h2>
     <p>
       Olá! Meu nome é Sophia e tenho uma paixão especial por programação, dinossauros e gatos. <br>
-      Tenho experiência prática em HTML, CSS, JavaScript, typescript, Python, Git, VSCode, React.js, Next, NestJS, PostgreSql, MongoDB, BaaS (ex. SupaBase, AppWrite), pgAdmin, e express.js, o que me permite desenvolver soluções digitais bem estruturadas, 
+      Tenho experiência prática em HTML, CSS, JavaScript, Python, Git, VSCode, React.js, Next.js, MongoDB, PostgreSQL, MySQL, BaaS (ex. SupaBase, AppWrite), Zustand, TanStack NestJS e express.js, o que me permite desenvolver soluções digitais bem estruturadas, 
       funcionais e otimizadas para a web.<br>
       Meu interesse por desenvolvimento vai além do código: gosto de entender como a experiência do usuário e a performance se conectam, 
       e busco constantemente aprender e aplicar boas práticas em cada projeto. 
@@ -176,11 +176,24 @@
     <div id="container">
       <h2>Projetos</h2>
       <nav>
+        <a href="#dinoapi" onclick="scrollToCenter(event, 'dinoapi')">DinoApi</a>
         <a href="#dinodatabase" onclick="scrollToCenter(event, 'dinodatabase')">Dinodatabase</a>
         <a href="#hanagate" onclick="scrollToCenter(event, 'hanagate')">Hana-Gate</a>
-        <a href="#ecosnap" onclick="scrollToCenter(event, 'ecosnap')">Eco Snap</a>
+        <a href="#fishis" onclick="scrollToCenter(event, 'fishis')">Fishis</a>
       </nav>
     </div>
+    <section id="dinoapi" class="projectslist" style="margin-bottom: 0px;">
+      <h3>Dino API</h3>
+      <p>
+        É uma API de dinossauros desenvolvida com Next.js, pensada como uma base 
+        de dados científica com informações organizadas sobre espécies, períodos 
+        geológicos e características principais. O projeto explora rotas de API, 
+        estrutura moderna do Next e organização de dados para facilitar consultas 
+        e uso educacional.
+      </p>
+      <br>
+      <a href="https://dinoapi-tau.vercel.app/">Clique aqui para visualizar projeto</a>
+    </section>
     <section id="dinodatabase" class="projectslist" style="margin-bottom: 0px;">
       <h3>DinoDatabase</h3>
       <p>
@@ -203,17 +216,18 @@
       </p><br>
       <a href="https://hanagate.onrender.com/">Clique aqui para visualizar projeto</a>
     </section>
-    <section id="ecosnap" class="projectslist" style="margin-bottom: 0px;">
-      <h3>Eco Snap</h3>
+    <section id="fishis" class="projectslist" style="margin-bottom: 0px;">
+      <h3>Fishis</h3>
       <p>
-        Esse projeto foi feito usando React.js, Supabase para login e banco de dados, e CSS para o visual.<br>
-        É um site de jogo onde o usuário usa um gacha para ganhar peixes, cada um com raridades diferentes. 
-        Esses peixes podem ser equipados e ajudam a aumentar a sorte do jogador, 
-        influenciando os próximos pulls e a progressão no jogo.
-        A ideia foi criar algo simples de usar, com visual limpo e mecânicas fáceis de entender, 
-        mas que ainda deem vontade de continuar jogando.
+        Fishis é um jogo de pesca desenvolvido com Next.js onde o usuário coleta 
+        peixes, vende suas capturas e evolui seu equipamento, podendo equipar varas 
+        e hooks para melhorar o desempenho. O projeto utiliza TanStack Query para 
+        gerenciamento de dados assíncronos, Zustand para estado global, PostgreSQL 
+        como banco de dados (hospedado no Neon) e autenticação via JWT. A aplicação 
+        foi construída com foco em organização, escalabilidade e arquitetura moderna 
+        full-stack.
       </p><br>
-      <a href="https://ecosnap-elqw.onrender.com">Clique aqui para visualizar projeto</a>
+      <a href="https://fishis.vercel.app/m">Clique aqui para visualizar projeto</a>
     </section>
   </section>
 
